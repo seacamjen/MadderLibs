@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     @Bind (R.id.Color) EditText mColor;
     @Bind(R.id.BodyPart) EditText mBodyPart;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

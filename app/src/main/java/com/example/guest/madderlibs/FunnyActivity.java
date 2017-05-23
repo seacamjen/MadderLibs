@@ -21,7 +21,7 @@ public class FunnyActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String[] inputs = intent.getStringArrayExtra("inputs");
-        String formattedResult = String.format("Be my %s \n %s make the world go %s \n Nemo says 'I  %s you' \n I love %s, %s does too \n You make my %s flutter", inputs[0], inputs[1], inputs[2], inputs[3], inputs[4], inputs[5], inputs[6]);
+        String formattedResult = String.format("Be my %s \n %s make the world go %s \n Nemo says 'I  %s you' \n I love %s, %s does too \n You make my %s flutter", inputs);
         mResultTextView.setText(formattedResult);
     }
 }
