@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guest.madderlibs.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just Do it, Mad Libs."
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="18dp"
+        android:id="@+id/Noun"
+        android:hint="Noun"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/NounPlural2"
+        android:hint="Noun (Plural)"
+        android:layout_below="@+id/Verb"
+        android:layout_alignLeft="@+id/Color"
+        android:layout_alignStart="@+id/Color" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Color"
+        android:hint="Color"
+        android:layout_below="@+id/NounPlural2"
+        android:layout_alignLeft="@+id/Noun"
+        android:layout_alignStart="@+id/Noun"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/NounPlural1"
+        android:hint="Noun Plural"
+        android:layout_below="@+id/Noun"
+        android:layout_alignLeft="@+id/Noun"
+        android:layout_alignStart="@+id/Noun"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Adjective"
+        android:hint="Adjective"
+        android:layout_below="@+id/NounPlural1"
+        android:layout_alignLeft="@+id/NounPlural1"
+        android:layout_alignStart="@+id/NounPlural1"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Verb"
+        android:hint="Verb"
+        android:layout_below="@+id/Adjective"
+        android:layout_alignLeft="@+id/Adjective"
+        android:layout_alignStart="@+id/Adjective"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/BodyPart"
+        android:hint="Body Part"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/Color"
+        android:layout_alignLeft="@+id/Color"
+        android:layout_alignStart="@+id/Color" />
+</RelativeLayout>
